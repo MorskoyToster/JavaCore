@@ -3,15 +3,11 @@ package ru.geekbrains.java.core.lesson_1.Verhovskii_IA;
 public class Human implements Moves{
 
     private String name;
-    private final float maxRunMetres = 4000;
-    private final float maxJumpMetres = 6;
-    private float jumps;
-    private float runs;
+    private final float maxRunDistance = 4000;
+    private final float maxJumpHeight = 6;
 
-    Human (String name, float jumps, float runs) {
+    Human (String name) {
         this.name = name;
-        this.jumps = jumps;
-        this.runs = runs;
     }
 
     @Override
@@ -34,10 +30,10 @@ public class Human implements Moves{
         System.out.println("Результат: ");
     }
     float getMaxRun() {
-        return this.maxRunMetres;
+        return this.maxRunDistance;
     }
 
     float getMaxJump() {
-        return this.maxJumpMetres;
+        return this.maxJumpHeight;
     }
 }

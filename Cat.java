@@ -3,15 +3,11 @@ package ru.geekbrains.java.core.lesson_1.Verhovskii_IA;
 public class Cat implements Moves {
 
     private String name;
-    private final float maxRunMetres = 500;
-    private final float maxJumpMetres = 1.5f;
-    private float jumps;
-    private float runs;
+    private final float maxRunDistance = 500;
+    private final float maxJumpHeight = 1.5f;
 
-    Cat (String name, float jumps, float runs) {
+    Cat (String name) {
         this.name = name;
-        this.jumps = jumps;
-        this.runs = runs;
     }
 
     @Override
@@ -35,10 +31,10 @@ public class Cat implements Moves {
     }
 
     float getMaxRun() {
-        return this.maxRunMetres;
+        return this.maxRunDistance;
     }
 
     float getMaxJump() {
-        return this.maxJumpMetres;
+        return this.maxJumpHeight;
     }
 }
