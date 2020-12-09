@@ -18,8 +18,11 @@ public class Main  {
             olympicMembers.startRunning();
             olympicMembers.stopRunning();
         }
-        Obstacles[] obstacles = new Obstacles[Wall, RunningTrack]
-        if (currentDistance < cat1.getMaxRun()) {
+        Obstacles[] obstacles = {new Wall(), new RunningTrack(), new RunningTrack(), new Wall() }; /* не получилось осздать конструкторы в беговой дорожке и стене */
+        for (Obstacles olympicExam : obstacles) {
+            olympicExam.examSportsman()
+        }
+        /* if (currentDistance < cat1.getMaxRun()) { */
 
         }
 
