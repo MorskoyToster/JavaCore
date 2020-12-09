@@ -18,9 +18,9 @@ public class Main  {
             olympicMembers.startRunning();
             olympicMembers.stopRunning();
         }
-        Obstacles[] obstacles = {new Wall(), new RunningTrack(), new RunningTrack(), new Wall() }; /* не получилось осздать конструкторы в беговой дорожке и стене */
+        Obstacles[] obstacles = {new Wall(), new RunningTrack(), new RunningTrack(), new Wall() }; /* конструкторы то создать получилось для дочерних препятствий, но зачем это.. */
         for (Obstacles olympicExam : obstacles) {
-            olympicExam.examSportsman()
+            olympicExam.examSportsman();
         }
         /* if (currentDistance < cat1.getMaxRun()) { */
 
